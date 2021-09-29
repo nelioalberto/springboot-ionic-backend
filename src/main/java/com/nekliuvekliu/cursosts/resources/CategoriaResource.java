@@ -3,7 +3,6 @@ package com.nekliuvekliu.cursosts.resources;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
