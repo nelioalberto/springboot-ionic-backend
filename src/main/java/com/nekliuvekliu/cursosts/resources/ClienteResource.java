@@ -11,7 +11,7 @@ import com.nekliuvekliu.cursosts.domain.Cliente;
 import com.nekliuvekliu.cursosts.services.ClienteService;
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("/clientes")
 public class ClienteResource {
 
 	@Autowired
