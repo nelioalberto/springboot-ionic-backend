@@ -3,10 +3,12 @@ package com.nekliuvekliu.cursosts.services;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import com.nekliuvekliu.cursosts.domain.Categoria;
 import com.nekliuvekliu.cursosts.repositories.CategoriaRepository;
+import com.nekliuvekliu.cursosts.services.exceptions.DataIntegrityException;
 import com.nekliuvekliu.cursosts.services.exceptions.ObjectNotFoundException;
 
 @Service
@@ -14,6 +16,7 @@ public class CategoriaService {
 	
 	@Autowired
 	private CategoriaRepository repo;
+	
 	public Categoria find(Integer id) {
 		Optional<Categoria> obj = repo.findById(id); 
 		return obj.orElseThrow(() -> new ObjectNotFoundException( 
@@ -30,4 +33,14 @@ public class CategoriaService {
 		return repo.save(obj);
 	}
 
+	public void delete (Integer id) {
+		find(id);
+		try {
+		repo.deleteById(id);
+		}
+		catch (DataIntegrityViolationException e) {
+			throw new DataIntegrityException("Não é possível excluir uma categoria que possui produtos");
+		}
+	}
+	
 }
