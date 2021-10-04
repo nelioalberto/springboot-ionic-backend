@@ -86,16 +86,19 @@ public class CursostsApplication implements CommandLineRunner{
 
 		Estado est1 = new Estado(null, "Minas Gerais");
 		Estado est2 = new Estado(null, "São Paulo");
+		Estado est3 = new Estado(null, "Rio de Janeiro");
 		
 		Cidade c1 = new Cidade(null, "Uberlândia", est1);
 		Cidade c2= new Cidade(null, "São Paulo", est2);
 		Cidade c3= new Cidade(null, "Campinas", est2);
+		Cidade c4= new Cidade(null, "Rio de Janeiro", est3);
 		
 		est1.getCidades().addAll(Arrays.asList(c1));
 		est2.getCidades().addAll(Arrays.asList(c2, c3));
+		est3.getCidades().addAll(Arrays.asList(c4));
 		
-		estadoRepository.saveAll(Arrays.asList(est1, est2));
-		cidadeRepository.saveAll(Arrays.asList(c1, c2, c3));
+		estadoRepository.saveAll(Arrays.asList(est1, est2, est3));
+		cidadeRepository.saveAll(Arrays.asList(c1, c2, c3, c4));
 		
 		Cliente cli1 = new Cliente(null, "Maria Silva", "mariasilva@gmail.com", "1111111111", TipoCliente.PESSOAFISICA);
 		cli1.getTelefones().addAll(Arrays.asList("21 11111-1111", "21 22222-2222"));
