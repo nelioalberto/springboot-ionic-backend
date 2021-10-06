@@ -32,6 +32,7 @@ public class Cliente implements Serializable{
 
 	// bug retirar @JsonManagedReference
 	@OneToMany(mappedBy="cliente", cascade=CascadeType.ALL)
+	//@OneToMany(mappedBy="cliente")
 	private List<Endereco> enderecos = new ArrayList<>();
 	
 	@ElementCollection

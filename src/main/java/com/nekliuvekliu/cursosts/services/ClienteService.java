@@ -9,6 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.nekliuvekliu.cursosts.domain.Cidade;
 import com.nekliuvekliu.cursosts.domain.Cliente;
@@ -16,7 +17,6 @@ import com.nekliuvekliu.cursosts.domain.Endereco;
 import com.nekliuvekliu.cursosts.dto.ClienteDTO;
 import com.nekliuvekliu.cursosts.dto.ClienteNewDTO;
 import com.nekliuvekliu.cursosts.enums.TipoCliente;
-import com.nekliuvekliu.cursosts.repositories.CidadeRepository;
 import com.nekliuvekliu.cursosts.repositories.ClienteRepository;
 import com.nekliuvekliu.cursosts.repositories.EnderecoRepository;
 import com.nekliuvekliu.cursosts.services.exceptions.DataIntegrityException;
@@ -37,6 +37,7 @@ public class ClienteService {
 		 "Objeto não encontrado! Id: " + id + ", Tipo: " + Cliente.class.getName())); 		
 	}
 
+	@Transactional
 	public Cliente insert (Cliente obj) {
 		obj.setId(null);
 		repo.save(obj);
