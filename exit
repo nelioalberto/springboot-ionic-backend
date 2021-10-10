@@ -1,0 +1,167 @@
+[33mcommit b44d88a51fe3ff5b8736c3aed2ffbc63257c8eaa[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Tue Oct 5 23:35:00 2021 -0300
+
+    Minha correção inserção e delete
+
+[33mcommit 39a5960737f31c5ddfa2475b4e0cb3ecbde0d6d8[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Tue Oct 5 23:16:17 2021 -0300
+
+    Minha correção inserção e delete
+
+[33mcommit b55728b1ab717cb5306b84fb9b5c0927c92baf36[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Mon Oct 4 20:09:01 2021 -0300
+
+    Deleção cliente com cascade nos endereços
+
+[33mcommit 237a2f10ccd21f66b1cb47531e83384db6929f3f[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Mon Oct 4 20:02:45 2021 -0300
+
+    Inserindo um novo cliente com POST *** AINDA COM ERRO
+
+[33mcommit 60ae7c7572622d2ea2b6e653ab8bc632be9c6780[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 22:25:49 2021 -0300
+
+    Correções em CategoriaService e Construtor de Pagamentos
+
+[33mcommit ad2efde5da2d457a6ea9205d18e230f5062187ec[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 21:57:10 2021 -0300
+
+    GET, PUT, DELETE para Cliente
+
+[33mcommit 3445b4e7ab6d34e44f4d3cec7c2b0e344bd80366[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 20:32:32 2021 -0300
+
+    Personalizando a mensagem de retorno da validação
+
+[33mcommit 7d4f2cfef26656bf27f49c1f221b76d2c7c5511e[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 19:57:40 2021 -0300
+
+    Validação sintática com Bean Validation
+
+[33mcommit 592ab37f4a8d654fb41b260bfd4d9bd3a709f852[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 19:18:29 2021 -0300
+
+    Paginação com parâmetros opcionais na requisição
+
+[33mcommit 088518abf6f064998857fbdc32eeb25ae64740b8[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 18:10:46 2021 -0300
+
+    Listando todas Categorias com DTO
+
+[33mcommit d0a2fd00fb9daee4405b8b3ed05789b7679501f0[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 17:43:56 2021 -0300
+
+    Deletando uma Categoria com DELETE
+
+[33mcommit 16da1552ac6e3a4f8a194bebd0fe9c954354d57a[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 17:07:52 2021 -0300
+
+    Atualizando categoria com PUT
+
+[33mcommit 5038972803370c881eb5abb7cb2471a901e0174f[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 16:48:16 2021 -0300
+
+    Inserindo uma nova categoria com POST
+
+[33mcommit 0836b4dc14a01978e1a805048fc9d8f17f418f57[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Sun Oct 3 13:22:56 2021 -0300
+
+    atualização utilizando json ignore
+
+[33mcommit c794299bf80ac4d6588535d27c92720d6d22c1ba[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Thu Sep 30 22:35:48 2021 -0300
+
+    Endpoint /pedidos/{id} disponibilizado
+
+[33mcommit 83ce97928bbfc900407b7852e2343ea22b9919eb[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Thu Sep 30 21:44:42 2021 -0300
+
+    ItemPedido e ItemPedidoPK
+
+[33mcommit 93613a17ad7ec92a743f6b31df4616f5f3745203[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Thu Sep 30 18:49:24 2021 -0300
+
+    Pedido, EstadoPagamento e Pagamento
+
+[33mcommit 4ba9087894cd6034242709f80f7fe057a6d368fd[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Wed Sep 29 22:31:19 2021 -0300
+
+    Endpoint /clientes/{id} disponivel
+
+[33mcommit 0848fab22be035c4c57611e1509854deb8bd8e16[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Wed Sep 29 22:16:47 2021 -0300
+
+    Cliente, TipoCliente, telefones e enderecos
+
+[33mcommit 77d684079b6a7e531bb180a9260d9b8711249958[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Wed Sep 29 20:03:46 2021 -0300
+
+    Estado e Cidade
+
+[33mcommit a5c67ddbee87845e0299aa245391ebfa8ec1b61e[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Wed Sep 29 18:51:47 2021 -0300
+
+    Ajustes no endpoint /categorias/{id}
+
+[33mcommit 3056c3c480378fcd9666ed37a5e910c8fbf971cc[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Wed Sep 29 13:41:02 2021 -0300
+
+    Produto e associacao muitos para muitos
+
+[33mcommit 2695f71b891ec2a012b24515cdedd54bfb1a7a9b[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Wed Sep 29 12:14:30 2021 -0300
+
+    Criando operacao de instanciacao
+
+[33mcommit 897b9d55ae611f288e8aa91fdc456b267ff3be09[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Wed Sep 29 00:37:29 2021 -0300
+
+    Criando repository e service para Categoria
+
+[33mcommit 3b354bed07e9b05acfc969493a50fb29e2b91755[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Tue Sep 28 23:05:11 2021 -0300
+
+    Banco de dados H2 e criação automática da base de dados
+
+[33mcommit 55e45664b321e1b1e3c910543f787ebcc4f72110[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Tue Sep 28 22:38:58 2021 -0300
+
+    testando a primeira classe de dominio
+
+[33mcommit 8d26ace3259aeab86c80e2b8d490c4fc98a07b4b[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Tue Sep 28 18:34:22 2021 -0300
+
+    rest testado
+
+[33mcommit 83fc40159c109cd6b0de0146d588b21d0eabcba7[m
+Author: nelioalberto <nekliuvekliu@gmail.com>
+Date:   Tue Sep 28 17:49:46 2021 -0300
+
+    projeto criado
