@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+F:\_cursojava_sts\springboot-ionic-backend\.metadata\.plugins\org.eclipse.jdt.core
