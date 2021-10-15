@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.nekliuvekliu.cursosts.domain.Categoria;
@@ -33,6 +34,9 @@ import com.nekliuvekliu.cursosts.repositories.ProdutoRepository;
 @Service
 public class DBService {
 
+	@Autowired
+	private BCryptPasswordEncoder pe;
+	
 	@Autowired
 	private CategoriaRepository categoriaRepository;
 	@Autowired
@@ -115,10 +119,10 @@ public class DBService {
 	estadoRepository.saveAll(Arrays.asList(est1, est2, est3));
 	cidadeRepository.saveAll(Arrays.asList(c1, c2, c3, c4));
 	
-	Cliente cli1 = new Cliente(null, "Maria Silva", "mariasilva@gmail.com", "1111111111", TipoCliente.PESSOAFISICA);
+	Cliente cli1 = new Cliente(null, "Maria Silva", "mariasilva@gmail.com", "1111111111", TipoCliente.PESSOAFISICA, pe.encode("123"));
 	cli1.getTelefones().addAll(Arrays.asList("21 11111-1111", "21 22222-2222"));
 
-	Cliente cli2 = new Cliente(null, "Nélio Alberto", "nalberto@gmail.com", "3333333333", TipoCliente.PESSOAFISICA);
+	Cliente cli2 = new Cliente(null, "Nélio Alberto", "nalberto@gmail.com", "3333333333", TipoCliente.PESSOAFISICA, pe.encode("123"));
 	cli1.getTelefones().addAll(Arrays.asList("21 33333-1111", "21 33333-2222"));
 	
 	Endereco e1 = new Endereco(null, "Rua Flores", "360", "apto 202", "Jardim", "20541340", cli1, c1);

@@ -8,6 +8,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,6 +25,9 @@ import com.nekliuvekliu.cursosts.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class ClienteService {
+	
+	@Autowired
+	private BCryptPasswordEncoder pe;
 	
 	@Autowired
 	private ClienteRepository repo;
@@ -72,7 +76,7 @@ public class ClienteService {
 		
 	public Cliente fromDTO (ClienteDTO objDTO) {
 	//	throw new UnsupportedOperationException();
-		return new Cliente(objDTO.getId(), objDTO.getNome(), objDTO.getEmail(), null, null);
+		return new Cliente(objDTO.getId(), objDTO.getNome(), objDTO.getEmail(), null, null, null);
 	}
 
 	public Cliente fromDTO (ClienteNewDTO objDTO) {
@@ -80,7 +84,8 @@ public class ClienteService {
 				                  objDTO.getNome(), 
 				                  objDTO.getEmail(), 
 				                  objDTO.getCpfOuCnpj(), 
-				                  TipoCliente.toEnum(objDTO.getTipo()));
+				                  TipoCliente.toEnum(objDTO.getTipo()),
+				                  pe.encode(objDTO.getSenha()));
 		
 		Cidade cid = new Cidade (objDTO.getCidadeId(), null, null);
 				
